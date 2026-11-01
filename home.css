@@ -1,0 +1,558 @@
+/* =========================================
+   GENTLE STEPS - HOMEPAGE HERO
+========================================= */
+
+.gs-home-hero {
+  position: relative;
+  overflow: hidden;
+  background:
+    radial-gradient(circle at 85% 15%, rgba(31, 126, 106, 0.12), transparent 30%),
+    linear-gradient(135deg, #f4fbf9 0%, #ffffff 55%, #eef8f5 100%);
+  padding: 70px 20px 65px;
+}
+
+.gs-hero-container {
+  max-width: 1220px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: minmax(0, 1.18fr) minmax(360px, 0.82fr);
+  gap: 55px;
+  align-items: center;
+}
+
+
+/* LEFT CONTENT */
+
+.gs-hero-content {
+  max-width: 720px;
+}
+
+.gs-hero-badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 9px 17px;
+  border-radius: 50px;
+  background: #e5f5f0;
+  color: #16705f;
+  font-size: 14px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.gs-hero-content h1 {
+  margin: 0 0 20px;
+  color: #173b35;
+  font-size: clamp(38px, 4.5vw, 62px);
+  line-height: 1.08;
+  letter-spacing: -1.5px;
+  font-weight: 800;
+}
+
+.gs-hero-content h1 span {
+  display: block;
+  color: #17816d;
+}
+
+.gs-hero-intro {
+  max-width: 680px;
+  margin: 0 0 28px;
+  color: #526761;
+  font-size: 18px;
+  line-height: 1.7;
+}
+
+
+/* SPECIALITIES */
+
+.gs-specialities {
+  margin-bottom: 28px;
+}
+
+.gs-specialities h2 {
+  margin: 0 0 13px;
+  color: #173b35;
+  font-size: 18px;
+}
+
+.gs-speciality-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 9px;
+}
+
+.gs-speciality-list span {
+  display: inline-flex;
+  padding: 8px 12px;
+  border: 1px solid #d7e9e4;
+  border-radius: 7px;
+  background: rgba(255, 255, 255, 0.75);
+  color: #31544d;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+
+/* CLINIC INFO */
+
+.gs-clinic-info {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 22px;
+  margin-bottom: 28px;
+}
+
+.gs-info-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.gs-info-icon {
+  width: 39px;
+  height: 39px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  background: #e3f4ef;
+  font-size: 18px;
+}
+
+.gs-info-item strong {
+  display: block;
+  color: #24463f;
+  font-size: 12px;
+  margin-bottom: 2px;
+}
+
+.gs-info-item p {
+  margin: 0;
+  color: #536962;
+  font-size: 14px;
+}
+
+
+/* HERO BUTTONS */
+
+.gs-hero-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 11px;
+}
+
+.gs-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 48px;
+  padding: 0 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 700;
+  transition: all 0.25s ease;
+}
+
+.gs-btn-call {
+  background: #177d69;
+  color: #ffffff;
+}
+
+.gs-btn-call:hover {
+  background: #126654;
+  transform: translateY(-2px);
+}
+
+.gs-btn-whatsapp {
+  background: #ffffff;
+  color: #177d69;
+  border: 1px solid #b8ddd3;
+}
+
+.gs-btn-whatsapp:hover {
+  background: #eaf8f4;
+  transform: translateY(-2px);
+}
+
+.gs-btn-book {
+  background: #173b35;
+  color: #ffffff;
+}
+
+.gs-btn-book:hover {
+  background: #102d28;
+  transform: translateY(-2px);
+}
+
+
+/* =========================================
+   CONTACT FORM
+========================================= */
+
+.gs-hero-form-wrapper {
+  position: relative;
+  background: #ffffff;
+  border: 1px solid #dcece8;
+  border-radius: 20px;
+  padding: 28px;
+  box-shadow: 0 18px 50px rgba(25, 75, 65, 0.12);
+}
+
+.gs-hero-form-wrapper::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 35px;
+  right: 35px;
+  height: 4px;
+  background: #17816d;
+  border-radius: 0 0 10px 10px;
+}
+
+.gs-form-header {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 23px;
+}
+
+.gs-form-icon {
+  width: 48px;
+  height: 48px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 13px;
+  background: #e5f5f0;
+  font-size: 22px;
+}
+
+.gs-form-header h2 {
+  margin: 0 0 4px;
+  color: #173b35;
+  font-size: 22px;
+}
+
+.gs-form-header p {
+  margin: 0;
+  color: #71817d;
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+.gs-form-group {
+  margin-bottom: 15px;
+}
+
+.gs-form-group label {
+  display: block;
+  margin-bottom: 6px;
+  color: #294941;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.gs-form-group label span {
+  color: #899692;
+  font-weight: 400;
+}
+
+.gs-form-group input,
+.gs-form-group select,
+.gs-form-group textarea {
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid #d8e5e2;
+  border-radius: 8px;
+  background: #fbfdfc;
+  color: #243f39;
+  padding: 12px 13px;
+  font-family: inherit;
+  font-size: 14px;
+  outline: none;
+  transition: all 0.2s ease;
+}
+
+.gs-form-group input,
+.gs-form-group select {
+  height: 45px;
+}
+
+.gs-form-group textarea {
+  min-height: 76px;
+  resize: vertical;
+}
+
+.gs-form-group input:focus,
+.gs-form-group select:focus,
+.gs-form-group textarea:focus {
+  border-color: #17816d;
+  background: #ffffff;
+  box-shadow: 0 0 0 3px rgba(23, 129, 109, 0.08);
+}
+
+.gs-form-group input::placeholder,
+.gs-form-group textarea::placeholder {
+  color: #9ba9a5;
+}
+
+.gs-form-submit {
+  width: 100%;
+  min-height: 49px;
+  border: 0;
+  border-radius: 8px;
+  background: #177d69;
+  color: #ffffff;
+  font-family: inherit;
+  font-size: 15px;
+  font-weight: 800;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.gs-form-submit:hover {
+  background: #126654;
+  transform: translateY(-1px);
+}
+
+.gs-form-note {
+  margin: 12px 0 0;
+  text-align: center;
+  color: #81908c;
+  font-size: 11px;
+}
+
+
+/* =========================================
+   WHY CHOOSE US
+========================================= */
+
+.gs-why-home {
+  padding: 75px 20px;
+  background: #ffffff;
+}
+
+.gs-home-container {
+  max-width: 1180px;
+  margin: 0 auto;
+}
+
+.gs-section-heading {
+  max-width: 700px;
+  margin: 0 auto 42px;
+  text-align: center;
+}
+
+.gs-section-heading > span {
+  display: inline-block;
+  margin-bottom: 9px;
+  color: #17816d;
+  font-size: 13px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.gs-section-heading h2 {
+  margin: 0 0 13px;
+  color: #173b35;
+  font-size: clamp(28px, 3.5vw, 42px);
+  line-height: 1.2;
+}
+
+.gs-section-heading p {
+  margin: 0;
+  color: #667772;
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+.gs-why-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 18px;
+}
+
+.gs-why-card {
+  padding: 27px 23px;
+  border: 1px solid #e0ece9;
+  border-radius: 15px;
+  background: #ffffff;
+  transition: all 0.25s ease;
+}
+
+.gs-why-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 14px 35px rgba(25, 75, 65, 0.09);
+}
+
+.gs-why-number {
+  margin-bottom: 20px;
+  color: #17816d;
+  font-size: 13px;
+  font-weight: 800;
+}
+
+.gs-why-card h3 {
+  margin: 0 0 10px;
+  color: #24463f;
+  font-size: 18px;
+}
+
+.gs-why-card p {
+  margin: 0;
+  color: #687973;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 1000px) {
+
+  .gs-home-hero {
+    padding: 55px 20px;
+  }
+
+  .gs-hero-container {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .gs-hero-content {
+    max-width: 850px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .gs-hero-intro {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .gs-speciality-list,
+  .gs-clinic-info,
+  .gs-hero-buttons {
+    justify-content: center;
+  }
+
+  .gs-hero-form-wrapper {
+    width: 100%;
+    max-width: 560px;
+    box-sizing: border-box;
+    margin: 0 auto;
+  }
+
+  .gs-why-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 600px) {
+
+  .gs-home-hero {
+    padding: 38px 15px 45px;
+  }
+
+  .gs-hero-container {
+    gap: 30px;
+  }
+
+  .gs-hero-badge {
+    font-size: 12px;
+    padding: 8px 12px;
+  }
+
+  .gs-hero-content h1 {
+    font-size: 36px;
+    letter-spacing: -0.8px;
+    line-height: 1.12;
+  }
+
+  .gs-hero-intro {
+    font-size: 15px;
+    line-height: 1.65;
+  }
+
+  .gs-specialities h2 {
+    font-size: 17px;
+  }
+
+  .gs-speciality-list {
+    gap: 7px;
+  }
+
+  .gs-speciality-list span {
+    font-size: 11px;
+    padding: 7px 9px;
+  }
+
+  .gs-clinic-info {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 13px;
+    text-align: left;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .gs-hero-buttons {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 100%;
+  }
+
+  .gs-btn {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .gs-hero-form-wrapper {
+    padding: 22px 17px;
+    border-radius: 15px;
+  }
+
+  .gs-form-header h2 {
+    font-size: 19px;
+  }
+
+  .gs-form-header p {
+    font-size: 12px;
+  }
+
+  .gs-why-home {
+    padding: 55px 15px;
+  }
+
+  .gs-section-heading {
+    margin-bottom: 30px;
+  }
+
+  .gs-section-heading h2 {
+    font-size: 29px;
+  }
+
+  .gs-section-heading p {
+    font-size: 14px;
+  }
+
+  .gs-why-grid {
+    grid-template-columns: 1fr;
+    gap: 13px;
+  }
+
+  .gs-why-card {
+    padding: 22px 19px;
+  }
+
+}
